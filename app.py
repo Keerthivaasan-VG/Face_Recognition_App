@@ -52,7 +52,7 @@ st.markdown("<br>", unsafe_allow_html=True)
 # ------------------ LOAD MODEL ------------------
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model("model/face_model.h5")
+    return tf.keras.models.load_model("facerecognition.h5")
 
 model = load_model()
 
