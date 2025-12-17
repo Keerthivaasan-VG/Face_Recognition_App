@@ -63,4 +63,5 @@ if image is not None:
         st.error("❌ Unknown Person")
     else:
         st.success(f"👤 {labels[str(class_id)]}")
+        st.write(class_id)
         st.write(f"Confidence: **{confidence * 100:.2f}%**")
