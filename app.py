@@ -10,7 +10,7 @@ st.set_page_config(page_title="Face Recognition", page_icon="🧑")
 # ---------------- LOAD MODEL ----------------
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model("model/face_model.h5")
+    return tf.keras.models.load_model("face_model.h5")
 
 model = load_model()
 
